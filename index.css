@@ -1,0 +1,194 @@
+html { overflow-x: hidden; }
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    display:none;
+    z-index:2;
+    width:40%;
+    min-width:300px;
+   
+}
+
+.lol{
+    position:relative;
+    animation: mymove 1s ;
+}
+@keyframes mymove {
+    from {left: -200px;}
+    to {left: 0px;}
+  }
+  
+  .hurr{
+    
+        height: 100%;
+        width: 200px;
+        background-color: #fff;
+        position: fixed!important;
+        z-index: 1;
+        overflow: auto;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+ 
+
+.sidebar a{
+    z-index: 4;
+    padding:10px;
+    text-decoration: none;
+    color: black;
+    display:block;
+    font-size: 35px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.sidebar a:hover{
+    cursor: pointer;
+    background-color: lavender;
+}
+
+/* .lol{
+    
+    position:fixed important;
+    top: 100px;
+    height: 100%;
+} */
+
+.header{
+    padding: 10px;
+}
+
+.head-in{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: white;
+    font-size: 1.5em;
+    display: flex;
+    padding-top: 20px;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.three-line:hover{
+    cursor: pointer;
+    background-color: lavender;
+}
+
+
+.food{
+    z-index: 3;
+    margin: auto;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    justify-content: space-around;
+    padding-top: 100px;
+    
+}
+
+h1,h2{padding: 10px;
+    font-size: 25px;
+    font-family:'Karma', serif;
+}
+p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Karma', serif;
+}
+
+.food-item{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.food img{
+    width: 100%;
+    height: 300px;
+}
+.food > div {
+
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 75px;
+    font-size: 30px;
+  }
+  
+  .page{
+      padding: 10px;
+      margin:20px;
+      display:flex;
+      font-size: 20px;
+      gap: 20px;
+      justify-content: center;   
+  }
+
+  .page a{
+      padding: 10px;
+  }
+  .page a:hover{
+      background-color: black;
+      color: white;
+  }
+  .page a{
+      text-decoration: none;
+      color: black;
+      
+  }
+  .section{
+      margin: auto;
+      text-align: center;
+      display: block;
+      width: 88vw;
+      margin-bottom: 30px;
+  }
+
+  .section img{
+      width: 100%;
+      height: auto;
+  }
+
+  .pp{
+      display: flex;
+  }
+
+  .pp:hover{
+      cursor: pointer;
+      background-color: honeydew;
+  }
+  .end{
+      width: 90vw;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 15px;
+      margin-bottom: 50px;
+  }
+
+  .tags{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .tags p:hover{
+      cursor: pointer;
+      background-color: rgb(255, 226, 226);
+      color: rgb(0, 0, 0);
+  }
+
+  @media screen and (max-width: 970px) {
+    .food {display: block; margin: auto;}
+    .end{display: block; }
+    .end footer, .box{
+        margin-bottom: 20px;
+    }
+
+     /* .food-item{width: 100%;} */
+     /* .main-left{width: 100%;}
+       */
+    }
